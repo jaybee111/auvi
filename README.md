@@ -274,7 +274,8 @@ ResultOptionsItemInterface {
 - :black_square_button: WAI-ARIA support
 - :black_square_button: Categorize suggestion list
 - :black_square_button: Add custom template support for suggestion list
-- :black_square_button: Add demo page
+- :black_square_button: Add demo page with examples
+- :black_square_button: Add unit tests
 
 ## License
 
