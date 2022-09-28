@@ -1,0 +1,35 @@
+{
+  "name": "auvi",
+  "private": true,
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/auvi.umd.js",
+  "module": "./dist/auvi.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/auvi.es.js",
+      "require": "./dist/auvi.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "api:server": "json-server --watch tests/db.json --port 3004 --delay 1000",
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.26.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.23.1",
+    "json-server": "^0.17.0",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.3",
+    "vite": "^2.9.15",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
