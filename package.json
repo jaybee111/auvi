@@ -22,9 +22,9 @@
     "lint:fix": "eslint src --ext .ts --fix",
     "api:server": "json-server --watch tests/db.json --port 3004 --delay 1000",
     "test": "npx playwright test",
-    "release-patch": "npm version patch && git push origin master && git push --tags",
-    "release-minor": "npm version minor && git push origin master && git push --tags",
-    "release-major": "npm version major && git push origin master && git push --tags"
+    "release-patch": "npm run test && npm version patch && git push origin master && git push --tags",
+    "release-minor": "npm run test && npm version minor && git push origin master && git push --tags",
+    "release-major": "npm run test && npm version major && git push origin master && git push --tags"
   },
   "devDependencies": {
     "@playwright/test": "^1.26.0",
