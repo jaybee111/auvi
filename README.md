@@ -4,7 +4,6 @@
     Dependency-free vanilla JavaScript autocompletion library
   </p>
 </div>
-<hr />
 
 # Table of contents
 
@@ -25,7 +24,7 @@
 
 - Vanilla JavaScript / no dependencies
 - Data fetching by predefined array or external url
-- Configuration by java script object or data attributes
+- Configuration by JavaScript object or data attributes
 - Customizable suggestion list items
 - Two variants: Tooltip and external list
 - Minimal styling / no bloated stylesheets / create your own styling
@@ -274,7 +273,8 @@ ResultOptionsItemInterface {
 
 - :black_square_button: WAI-ARIA support
 - :black_square_button: Categorize suggestion list
-- :black_square_button: Add custom template support for suggestion list 
+- :black_square_button: Add custom template support for suggestion list
+- :black_square_button: Add demo page
 
 ## License
 
