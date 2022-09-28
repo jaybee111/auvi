@@ -16,10 +16,8 @@
 - [Roadmap](#roadmap)
 - [License](#license)
 
-<!-- About the Project -->
 ## About the Project
 
-<!-- Features -->
 ### Features
 
 - Vanilla JavaScript / no dependencies
@@ -172,7 +170,7 @@ const options = {
 };
 ```
 
-The placeholder ```{term}``` is mandatory and will be replaced with search string. Auvi expects ```json``` from external sources.
+The placeholder ```{term}``` is mandatory and will be replaced with your search phrase. Auvi expects ```json``` from external sources.
 
 ##### resultItemTemplate
 
