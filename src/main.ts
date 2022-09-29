@@ -9,7 +9,7 @@ import AuviOptionsService from "./services/AuviOptionsService";
 import {registerListeners} from "./helpers/EventHelper";
 import {ResultItemClickedListener} from "./events/ResultItemClickedListener";
 import {SearchFormInputListener} from "./events/SearchFormInputListener";
-import {CloseResultListListener} from "./events/CloseResultListListener";
+import {ResultListCloseListener} from "./events/ResultListCloseListener";
 import {SearchFormArrowKeyListener} from "./events/SearchFormArrowKeyListener";
 import {DocumentClickListener} from "./events/DocumentClickListener";
 import {LoadingIndicatorHideListener} from "./events/LoadingIndicatorHideListener";
@@ -64,7 +64,7 @@ export default class Auvi implements AuviInterface {
 
         // Register Listeners
         registerListeners([
-            new CloseResultListListener(this.store),
+            new ResultListCloseListener(this.store),
             new DocumentClickListener(this.store),
             new LoadingIndicatorHideListener(this.store),
             new LoadingIndicatorShowListener(this.store),
