@@ -98,14 +98,14 @@ const options = {
 const auviInstance = new Auvi(myInputElement,options).init();
 ```
 
-| Key                | data-attribute                        | Type                                                                        | Default value                                                                                   | Mandatory          |
-|--------------------|---------------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------|
-| mode               | data-mode                             | string                                                                      | tooltip                                                                                         |                    |
-| minInputLength     | data-min-input-length                 | Number                                                                      | 3                                                                                               | :white_check_mark: |
-| options            | data-options (_only for string type_) | [ResultOptionsItemInterface](#resultoptionsiteminterface)[], string         | []                                                                                              |                    |
-| resultItemTemplate | _only object notation_                | (item: [ResultOptionsItemInterface](#resultoptionsiteminterface)) => string | ``(optionsItem: ResultOptionsItemInterface) => `${optionsItem.value}`;``                        |                    |
-| resultListTarget   | _only object notation_                | HTMLElement, undefined                                                      | undefined                                                                                       |                    |
-| loader             | _only object notation_                | () => string, undefined                                                     | ``() => <div class="auvi-loading-indicator"><div></div><div></div><div></div><div></div></div>`` |                    |
+| Key                | data-attribute                        | Type                                                                        | Default value                                                                                   |
+|--------------------|---------------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| mode               | data-mode                             | string                                                                      | tooltip                                                                                         |
+| minInputLength     | data-min-input-length                 | Number                                                                      | 3                                                                                               |
+| options            | data-options (_only for string type_) | [ResultOptionsItemInterface](#resultoptionsiteminterface)[], string         | []                                                                                              |
+| resultItemTemplate | _only object notation_                | (item: [ResultOptionsItemInterface](#resultoptionsiteminterface)) => string | ``(optionsItem: ResultOptionsItemInterface) => `${optionsItem.value}`;``                        |
+| resultListTarget   | _only object notation_                | HTMLElement, undefined                                                      | undefined                                                                                       |
+| loader             | _only object notation_                | () => string, undefined                                                     | ``() => <div class="auvi-loading-indicator"><div></div><div></div><div></div><div></div></div>`` |
 
 ##### mode
 
