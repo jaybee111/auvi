@@ -6,6 +6,7 @@ export class ResultListOpenListener extends EventListenerBase {
         this.store.events.subscribe('openResultList', () => {
             if(this.store.components.resultList) {
                 this.store.components.resultList.classList.add('is-open');
+                this.store.components.wrapper?.classList.add('is-open');
                 if(this.store.options.mode === 'tooltip') {
                     // Workarund, doesnt get height after setting "is-open" immediately
                     setTimeout(() => {

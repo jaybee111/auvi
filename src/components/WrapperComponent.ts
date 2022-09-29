@@ -57,6 +57,10 @@ class WrapperComponent {
         if(resultListEl && this.store.options?.mode == 'tooltip') {
             this.wrapperEl.appendChild(resultListEl);
         }
+
+        if(this.wrapperEl) {
+            this.store.setComponentEl('wrapper', this.wrapperEl);
+        }
     }
 
 }

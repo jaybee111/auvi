@@ -8,6 +8,7 @@ class AppStore {
         searchForm: HTMLInputElement | undefined;
         resultList: HTMLElement | undefined;
         loadingIndicator: HTMLElement | undefined;
+        wrapper: HTMLElement | undefined;
     };
     public currentRequestAbortController: AbortController | undefined;
     public options: AuviOptionsInterface;
@@ -18,12 +19,13 @@ class AppStore {
             searchForm: undefined,
             resultList: undefined,
             loadingIndicator: undefined,
+            wrapper: undefined
         };
         this.currentRequestAbortController = undefined;
         this.options = new AuviOptionsService(this).getDefaultOptions();
     }
 
-    setComponentEl(key: "searchForm" | "resultList" | "loadingIndicator", componentEl: Element) {
+    setComponentEl(key: "searchForm" | "resultList" | "loadingIndicator" | "wrapper", componentEl: Element) {
         // @ts-ignore
         this.components[key] = componentEl;
     }
