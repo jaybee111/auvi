@@ -71,6 +71,12 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(e);
     });
 
+    const elTooltipAsyncDataAttr = document.getElementById('auvi-input-tooltip-async-data-attr');
+    const auviInstanceTooltipAsyncDataAttr = new Auvi(elTooltipAsyncDataAttr).init();
+    auviInstanceTooltipAsyncDataAttr.on('resultItemClicked', function (e: any) {
+        console.log(e);
+    });
+
     const elExternalAsync = document.getElementById('auvi-input-external-async');
     const optionsExternalAsync = {
         mode: 'external',

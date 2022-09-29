@@ -39,9 +39,7 @@ class AuviOptionsService {
         }
 
         // Merge default options with individual options by data-attributes
-        if(options) {
-            newOptions = this.getOptionsByDataAttributes(newOptions);
-        }
+        newOptions = this.getOptionsByDataAttributes(newOptions);
 
         return newOptions;
     }

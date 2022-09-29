@@ -42,6 +42,7 @@ export default class Auvi implements AuviInterface {
         this.store = new AppStore();
 
         this.el = el;
+        this.store.setComponentEl('searchForm', this.el);
 
         // Parse options and add to global store
         this.options = new AuviOptionsService(this.store).parse(options);
