@@ -27,7 +27,7 @@ class SearchService {
     async searchByUrl(searchPhrase: string): Promise<ResultOptionsItemInterface[]> {
         let options: Array<ResultOptionsItemInterface> = [];
         this.store.events.publish('stopCurrentRequest');
-        const url = (this.store.options.options as String).replace('{term}', encodeURIComponent(searchPhrase));
+        const url = decodeURI(this.store.options.options as string).replace('{term}', encodeURIComponent(searchPhrase));
         const controller = new AbortController();
         this.store.setAbortController(controller);
         const signal = controller.signal;
