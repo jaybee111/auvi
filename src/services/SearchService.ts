@@ -1,6 +1,6 @@
 import AppStore from "../store/AppStore";
 import ResultOptionsItemInterface from "../interfaces/ResultOptionsItemInterface";
-import {isArray, isString} from "../helpers/TypeHelper";
+import {isArray, isObject, isString} from "../helpers/TypeHelper";
 
 class SearchService {
     private readonly store: AppStore;
@@ -15,6 +15,9 @@ class SearchService {
             options = this.searchArray(searchPhrase);
         } else if (isString(this.store.options.options)) {
             options = await this.searchByUrl(searchPhrase);
+            if(isObject(options)) {
+                options = Object.values(options);
+            }
         }
 
         return options;
