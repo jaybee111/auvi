@@ -71,8 +71,13 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(e);
     });
 
+    const optionsTooltipAsyncDataAttr = {
+        resultItemTemplate: function (item) {
+            return `<strong>${item.value}</strong>`
+        },
+    };
     const elTooltipAsyncDataAttr = document.getElementById('auvi-input-tooltip-async-data-attr');
-    const auviInstanceTooltipAsyncDataAttr = new Auvi(elTooltipAsyncDataAttr).init();
+    const auviInstanceTooltipAsyncDataAttr = new Auvi(elTooltipAsyncDataAttr, optionsTooltipAsyncDataAttr).init();
     auviInstanceTooltipAsyncDataAttr.on('resultItemClicked', function (e: any) {
         console.log(e);
     });
