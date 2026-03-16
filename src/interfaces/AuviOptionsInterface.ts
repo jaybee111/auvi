@@ -1,7 +1,7 @@
 import ResultOptionsItemInterface from "./ResultOptionsItemInterface";
 
 interface AuviOptionsInterface {
-    minInputLength: Number,
+    minInputLength: number,
     options: Array<ResultOptionsItemInterface> | string,
     resultItemTemplate: (optionsItem: ResultOptionsItemInterface) => string,
     resultListTarget: HTMLElement | undefined,
