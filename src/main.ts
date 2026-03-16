@@ -26,7 +26,6 @@ import {SearchFormTabListener} from "./events/SearchFormTabListener";
 import {StopCurrentRequestListener} from "./events/StopCurrentRequestListener";
 import {ResultListScrollListener} from "./events/ResultListScrollListener";
 
-// eslint-disable-next-line no-unused-vars
 export default class Auvi implements AuviInterface {
     public options: AuviOptionsInterface;
     public el: HTMLInputElement;

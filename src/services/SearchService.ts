@@ -39,7 +39,7 @@ class SearchService {
         } catch (error) {
             // @ts-ignore
             if (error.name != "AbortError") {
-                throw new Error(`Request failed for ${url}: ${error}`);
+                throw new Error(`Request failed for ${url}`, { cause: error });
             }
         }
 
