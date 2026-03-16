@@ -2,7 +2,7 @@
   "name": "auvi",
   "type": "module",
   "description": "Dependency-free vanilla JavaScript autocompletion library",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "files": [
     "dist"
   ],
