@@ -1,4 +1,5 @@
 import Auvi from '../src/main.js';
+import { API_URL } from './config';
 
 document.addEventListener('DOMContentLoaded', function () {
     const el = document.getElementById('auvi-input-tooltip');
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const elTooltipAsync = document.getElementById('auvi-input-tooltip-async');
     const optionsTooltipAsync = {
         mode: 'tooltip',
-        options: "http://localhost:3004/users?q={term}"
+        options: "${API_URL}/users?q={term}"
     };
     const auviInstanceTooltipAsync = new Auvi(elTooltipAsync, optionsTooltipAsync).init();
     auviInstanceTooltipAsync.on('resultItemClicked', function (e: any) {
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const elTooltipAsyncTemplate = document.getElementById('auvi-input-tooltip-async-template');
     const optionsTooltipAsyncTemplate = {
         mode: 'tooltip',
-        options: "http://localhost:3004/users?q={term}",
+        options: "${API_URL}/users?q={term}",
         resultItemTemplate: function (item) {
             return `<strong>${item.value}</strong>`
         },
@@ -86,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const optionsExternalAsync = {
         mode: 'external',
         resultListTarget: document.querySelector('.auvi-result-list-external-async'),
-        options: "http://localhost:3004/users?q={term}"
+        options: "${API_URL}/users?q={term}"
     };
     const auviInstanceExternalAsync = new Auvi(elExternalAsync, optionsExternalAsync).init();
     auviInstanceExternalAsync.on('resultItemClicked', function (e: any) {

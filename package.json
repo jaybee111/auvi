@@ -22,6 +22,7 @@
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "api:server": "json-server --watch tests/db.json --port 3004 --delay 1000",
+    "pretest": "playwright install",
     "test": "npx playwright test",
     "release-patch": "npm run test && npm version patch && git push origin master && git push --tags",
     "release-minor": "npm run test && npm version minor && git push origin master && git push --tags",

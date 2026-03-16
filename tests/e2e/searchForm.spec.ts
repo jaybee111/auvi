@@ -1,7 +1,7 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '../fixtures';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('http://localhost:3000/');
+  await page.goto('/');
 });
 
 test('Loading indicator is shown on typing (Async and Tooltip-Mode)', async ({ page }) => {
