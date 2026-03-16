@@ -3,6 +3,10 @@
   "type": "module",
   "description": "Dependency-free vanilla JavaScript autocompletion library",
   "version": "0.3.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaybee111/auvi"
+  },
   "files": [
     "dist"
   ],
