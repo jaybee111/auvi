@@ -13,7 +13,7 @@
       "import": "./dist/auvi.es.js",
       "require": "./dist/auvi.umd.js"
     },
-    "./dist/huply.css": "./dist/huply.css"
+    "./dist/auvi.css": "./dist/auvi.css"
   },
   "scripts": {
     "dev": "vite",
